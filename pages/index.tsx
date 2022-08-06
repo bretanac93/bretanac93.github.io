@@ -1,8 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import Link from "next/link";
 
 const Home: NextPage = () => {
   return (
@@ -18,23 +16,10 @@ const Home: NextPage = () => {
           Website under construction
         </h1>
 
-        <span className={styles.description}>
-          If you need to reach out to me in the meanwhile please refer to my <Link className="hover:underline" href="https://linkedin.com/in/bretanac93" target="_blank">LinkedIn</Link>
-        </span>
+        <p className={styles.description}>
+          If you need to reach out to me in the meanwhile please refer to my <a href="https://linkedin.com/in/bretanac93" target="_blank" rel="noreferrer">LinkedIn</a>
+        </p>
       </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
     </div>
   )
 }
